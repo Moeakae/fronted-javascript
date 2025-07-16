@@ -1,20 +1,17 @@
-{
-  "entry": "./src/index.ts",
-  "output": {
-    "filename": "bundle.js",
-    "path": "./dist"
-  },
-  "resolve": {
-    "extensions": [".ts", ".js"]
-  },
-  "module": {
-    "rules": [
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.ts',
+  module: {
+    rules: [
       {
-        "test": "\\.ts$",
-        "use": "ts-loader",
-        "exclude": "/node_modules/"
-      }
-    ]
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
   },
-  "mode": "development"
+  resolve: {
+    extensions: '.tsx, .ts, .js',
+  }
 }
