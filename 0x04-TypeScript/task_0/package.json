@@ -27,7 +27,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2",
-    "typescript_dependencies": "^1.0.0"
+    "typescript_dependencies": "^1.0.0",
+    "webpack-merge": "6.0.1"
   },
   "description": ""
 }
